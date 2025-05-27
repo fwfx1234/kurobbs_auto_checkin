@@ -37,18 +37,14 @@ class KurobbsClient:
         """Get the headers required for API requests."""
         return {
             "osversion": "Android",
-            "devcode": "2fba3859fe9bfe9099f2696b8648c2c6",
+            "devcode": "223.104.121.27, Mozilla/5.0 (Linux; Android 15; PJX110 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36 Kuro/2.4.4 KuroGameBox/2.4.4",
             "countrycode": "CN",
             "ip": "10.0.2.233",
-            "model": "2211133C",
             "source": "android",
             "lang": "zh-Hans",
-            "version": "1.0.9",
-            "versioncode": "1090",
             "token": self.token,
             "content-type": "application/x-www-form-urlencoded; charset=utf-8",
-            "accept-encoding": "gzip",
-            "user-agent": "okhttp/3.10.0",
+            "user-agent": "Mozilla/5.0 (Linux; Android 15; PJX110 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36 Kuro/2.4.4 KuroGameBox/2.4.4",
         }
 
     def make_request(self, url: str, data: Dict[str, Any]) -> Response:
